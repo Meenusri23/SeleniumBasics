@@ -4,9 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class OpenGoogle {
+public class OpenGoogle_1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		//Informing system about using CHROME browser
@@ -19,8 +19,8 @@ public class OpenGoogle {
 		
 		//Getting URL 
 		
-		//driver.get("https://www.google.com/");
-		driver.get("https://www.leafground.com/link.xhtml");
+		driver.get("https://www.google.com/");
+		//driver.get("https://www.leafground.com/link.xhtml");
 		
 		//Maximize window
 		
@@ -29,12 +29,18 @@ public class OpenGoogle {
 		//Find google search TextBox
 		
 		driver.findElement(By.className("gLFyf")).sendKeys("Agni"+Keys.ENTER);
+		//Thread.sleep(3000);
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().refresh();
+		driver.quit();
 		
 		//Find 1st link after search results
 		
 		//clicking on hyperlink text
 		
-		driver.findElement(By.linkText("Go to Dashboard")).click();
+		//driver.findElement(By.linkText("Physiological aspects of Agni - PMC")).click();
+		
 		
 		
 		

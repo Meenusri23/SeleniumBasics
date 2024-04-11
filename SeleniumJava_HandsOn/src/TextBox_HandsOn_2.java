@@ -3,7 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class TextBox_HandsOn {
+public class TextBox_HandsOn_2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -24,7 +24,7 @@ public class TextBox_HandsOn {
 		//Append Text
 		
 		WebElement Appendtext = driver.findElement(By.xpath("//*[@id=\"j_idt88:j_idt91\"]"));
-		Appendtext.sendKeys(" is beautiful city");
+		Appendtext.sendKeys("is beautiful city");
 		
 		//Retrieve text from TextBox
 		
